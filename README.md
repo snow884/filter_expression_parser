@@ -7,7 +7,7 @@ distance eq 10
 age lt 5
 ```
 ```python
-( (name eq \'adam\') AND (age lt 60) ) OR (user_name ne \'gorgo_and_mormo\')
+( (name eq 'adam') AND (age lt 60) ) OR (user_name ne 'gorgo_and_mormo')
 ```
 
 I am presenting an example in example.py on how to configure the class. Basicly you need to give it the names of the columns, operations that are allowed, lambda functions defining the what they represent and lambda functions for format checks.
