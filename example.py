@@ -5,6 +5,7 @@ import datetime
 def create_setup():
     jog_parser_params = {}
 
+    # define the format checking functions
     def check_jog_id(str_in):
 
         try:
@@ -39,7 +40,8 @@ def create_setup():
             raise(Exception('invalid format of the column jog_id'))
 
         return(val_out)
-            
+
+    # define variable types and forma checking functions
     jog_parser_params['column_list']=(
     {
         'jog_id': {
@@ -63,7 +65,8 @@ def create_setup():
             }
     }
     )
-        
+    
+    # define the comparison operators
     jog_parser_params['comp_op_list'] = (
     {
         'eq':{
@@ -84,6 +87,7 @@ def create_setup():
             }
     })
 
+    # define the logical operators
     jog_parser_params['log_ops'] = (
     {
         'or':{
